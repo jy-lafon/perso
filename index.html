@@ -1,0 +1,1336 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jean-Yves Lafon - Expert Marketing et Communication digitale avec 25+ ans d'expérience. Conseil en stratégie digitale, Web, E-commerce et accompagnement en temps partagé.">
+    <meta name="keywords" content="marketing digital, stratégie digitale, web agency, conseil marketing, SEO, e-commerce, Paris">
+    <meta name="author" content="Jean-Yves Lafon">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Jean-Yves Lafon - Expert Marketing Digital">
+    <meta property="og:description" content="25+ ans d'expérience | 300+ projets réalisés | Accompagnement en stratégie digitale">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Jean-Yves Lafon",
+      "jobTitle": "Manager Marketing BtoB | Conseil en Stratégie Digitale",
+      "url": "https://www.linkedin.com/in/jylafon",
+      "sameAs": ["https://www.linkedin.com/in/jylafon"],
+      "email": "jylafon@gmail.com",
+      "telephone": "+33140475148"
+    }
+    </script>
+    
+    <title>Jean-Yves Lafon - Expert Marketing Digital & Stratégie Web</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary-blue: #1e40af;
+            --dark-blue: #1e3a8a;
+            --light-blue: #dbeafe;
+            --accent-blue: #2563eb;
+            --text-dark: #1f2937;
+            --text-gray: #6b7280;
+            --bg-light: #f9fafb;
+            --comic-yellow: #fbbf24;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: #fff;
+        }
+        
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            flex-wrap: wrap;
+            gap: 2rem;
+            padding: 0 2rem;
+        }
+        
+        nav a {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            position: relative;
+        }
+        
+        nav a:hover {
+            color: var(--primary-blue);
+        }
+        
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-blue);
+            transition: width 0.3s;
+        }
+        
+        nav a:hover::after {
+            width: 100%;
+        }
+        
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--light-blue) 0%, #ffffff 100%);
+            padding: 6rem 2rem 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 10px,
+                rgba(30, 64, 175, 0.02) 10px,
+                rgba(30, 64, 175, 0.02) 20px
+            );
+        }
+        
+        .hero-content {
+            max-width: 1200px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero-text h1 {
+            font-size: 3rem;
+            color: var(--dark-blue);
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        
+        .hero-text .tagline {
+            font-size: 1.3rem;
+            color: var(--primary-blue);
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+        
+        .hero-text p {
+            font-size: 1.1rem;
+            color: var(--text-gray);
+            margin-bottom: 2rem;
+        }
+        
+        .hero-stats {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--primary-blue);
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-gray);
+        }
+        
+        .hero-image {
+            position: relative;
+        }
+        
+        .hero-image img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+            border: 5px solid #000;
+            transform: rotate(-2deg);
+            transition: transform 0.3s;
+        }
+        
+        .hero-image img:hover {
+            transform: rotate(0deg) scale(1.02);
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            display: inline-block;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        
+        .btn-primary {
+            background: var(--primary-blue);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: var(--dark-blue);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(30, 64, 175, 0.3);
+        }
+        
+        .btn-secondary {
+            background: white;
+            color: var(--primary-blue);
+            border: 2px solid var(--primary-blue);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--primary-blue);
+            color: white;
+        }
+        
+        section {
+            padding: 5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        section h2 {
+            font-size: 2.5rem;
+            color: var(--dark-blue);
+            margin-bottom: 3rem;
+            text-align: center;
+            position: relative;
+        }
+        
+        section h2::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: var(--primary-blue);
+            margin: 1rem auto 0;
+            border-radius: 2px;
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+        
+        .about-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        
+        .about-text p {
+            margin-bottom: 1.5rem;
+        }
+        
+        .expertise-list {
+            background: var(--bg-light);
+            padding: 2rem;
+            border-radius: 12px;
+            border-left: 4px solid var(--primary-blue);
+        }
+        
+        .expertise-list h3 {
+            color: var(--dark-blue);
+            margin-bottom: 1rem;
+        }
+        
+        .expertise-list ul {
+            list-style: none;
+        }
+        
+        .expertise-list li {
+            padding: 0.5rem 0;
+            color: var(--text-gray);
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .expertise-list li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: var(--primary-blue);
+            font-weight: bold;
+        }
+        
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(to bottom, var(--primary-blue), var(--light-blue));
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: 3rem;
+            padding-left: 2rem;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2.5rem;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: var(--primary-blue);
+            border: 4px solid white;
+            box-shadow: 0 0 0 2px var(--primary-blue);
+        }
+        
+        .timeline-item h3 {
+            color: var(--dark-blue);
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .timeline-item .company {
+            font-weight: 600;
+            color: var(--primary-blue);
+            margin-bottom: 0.3rem;
+        }
+        
+        .timeline-item .period {
+            color: var(--text-gray);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+        
+        .timeline-item p {
+            color: var(--text-gray);
+            line-height: 1.7;
+        }
+        
+        #realisations {
+            background: var(--bg-light);
+        }
+        
+        .realizations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .realization-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-top: 4px solid var(--primary-blue);
+        }
+        
+        .realization-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
+        .realization-card h3 {
+            color: var(--dark-blue);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .realization-card .client {
+            color: var(--primary-blue);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .realization-card p {
+            color: var(--text-gray);
+            line-height: 1.7;
+        }
+        
+        .realization-card .tags {
+            margin-top: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        
+        .tag {
+            background: var(--light-blue);
+            color: var(--primary-blue);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+        
+        .edit-note {
+            background: #fff3cd;
+            border: 2px dashed #ffc107;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        .edit-note p {
+            color: #856404;
+            font-weight: 500;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .skill-category {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .skill-category h3 {
+            color: var(--dark-blue);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+        
+        .skill-category ul {
+            list-style: none;
+        }
+        
+        .skill-category li {
+            padding: 0.5rem 0;
+            color: var(--text-gray);
+            border-bottom: 1px solid var(--bg-light);
+        }
+        
+        .skill-category li:last-child {
+            border-bottom: none;
+        }
+        
+        /* Testimonials */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+        
+        .testimonial-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-left: 4px solid var(--primary-blue);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            color: var(--text-gray);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+        
+        .testimonial-text::before {
+            content: '"';
+            font-size: 3rem;
+            color: var(--light-blue);
+            position: absolute;
+            top: -1rem;
+            left: -0.5rem;
+            font-family: Georgia, serif;
+        }
+        
+        .testimonial-author {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 2px solid var(--bg-light);
+        }
+        
+        .testimonial-author strong {
+            color: var(--dark-blue);
+            font-size: 1.1rem;
+        }
+        
+        #contact {
+            background: linear-gradient(135deg, var(--dark-blue) 0%, var(--primary-blue) 100%);
+            color: white;
+        }
+        
+        #contact h2 {
+            color: white;
+        }
+        
+        #contact h2::after {
+            background: white;
+        }
+        
+        .contact-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .contact-info {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .contact-info p {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            opacity: 0.95;
+        }
+        
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .contact-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+        
+        .contact-links a:hover {
+            opacity: 0.8;
+        }
+        
+        form {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        label {
+            display: block;
+            color: var(--text-dark);
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+        
+        input, textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 2px solid #e5e7eb;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: border-color 0.3s;
+        }
+        
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: var(--primary-blue);
+        }
+        
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        
+        .captcha-group {
+            background: var(--bg-light);
+            padding: 1rem;
+            border-radius: 6px;
+            margin-bottom: 1.5rem;
+        }
+        
+        .captcha-question {
+            color: var(--text-dark);
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+        
+        .form-message {
+            padding: 1rem;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+            text-align: center;
+            display: none;
+        }
+        
+        .form-message.success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .form-message.error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        
+        .honeypot {
+            position: absolute;
+            left: -9999px;
+            opacity: 0;
+            pointer-events: none;
+        }
+        
+        footer {
+            background: var(--text-dark);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        footer p {
+            opacity: 0.8;
+            margin: 0.5rem 0;
+        }
+        
+        @media (max-width: 968px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-image {
+                order: -1;
+            }
+            
+            .hero-image img {
+                max-width: 400px;
+                margin: 0 auto;
+            }
+            
+            .hero-stats {
+                justify-content: center;
+            }
+            
+            .cta-buttons {
+                justify-content: center;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            
+            nav ul {
+                gap: 1rem;
+            }
+            
+            section h2 {
+                font-size: 2rem;
+            }
+        }
+        
+        @media (max-width: 640px) {
+            .hero {
+                padding: 5rem 1rem 3rem;
+            }
+            
+            .hero-text h1 {
+                font-size: 2rem;
+            }
+            
+            .hero-text .tagline {
+                font-size: 1.1rem;
+            }
+            
+            .hero-stats {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            section {
+                padding: 3rem 1rem;
+            }
+            
+            .timeline {
+                padding-left: 0;
+            }
+            
+            .timeline::before {
+                left: 10px;
+            }
+            
+            .timeline-item {
+                padding-left: 3rem;
+            }
+            
+            .timeline-item::before {
+                left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#apropos">À propos</a></li>
+            <li><a href="#experience">Expérience</a></li>
+            <li><a href="#realisations">Réalisations</a></li>
+            <li><a href="#testimonials">Témoignages</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Jean-Yves Lafon</h1>
+                <p class="tagline">Manager Marketing BtoB | Expert en Stratégie Digitale</p>
+                <p>25+ ans d'expérience en marketing et communication digitale. Fondateur de web agency et accompagnateur de directions dans leur transformation numérique.</p>
+                
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">25+</span>
+                        <span class="stat-label">ans d'expérience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">300+</span>
+                        <span class="stat-label">projets réalisés</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">200+</span>
+                        <span class="stat-label">clients accompagnés</span>
+                    </div>
+                </div>
+                
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary">Me contacter</a>
+                    <a href="https://www.linkedin.com/in/jylafon" target="_blank" rel="noopener" class="btn btn-secondary">LinkedIn</a>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <img src="https://i.ibb.co/TM2RgNm/hello-world-jyl.png" alt="Jean-Yves Lafon - Illustration comic Hello World">
+            </div>
+        </div>
+    </section>
+
+    <section id="apropos">
+        <h2>À propos</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Expert en marketing et communication digitale avec plus de 25 ans d'expérience, j'accompagne les directions marketing et directions générales pour naviguer dans l'écosystème numérique (Web et IA) en constante évolution.</p>
+                
+                <p><strong>Mes domaines d'intervention :</strong></p>
+                
+                <p><strong>Stratégie digitale :</strong> Analyse des enjeux, définition de solutions adaptées, élaboration de cahiers des charges optimisés.</p>
+                
+                <p><strong>Web & E-commerce :</strong> Création/refonte de sites, optimisation UX/UI, développement de boutiques en ligne performantes.</p>
+                
+                <p><strong>Marketing digital :</strong> Acquisition de trafic, conversion, analyse de performance, automation marketing.</p>
+                
+                <p><strong>SEO/SEA :</strong> Audit, optimisation, campagnes Google Ads et Meta Business Center.</p>
+                
+                <p><strong>Technologies :</strong> Maîtrise de WordPress, WooCommerce, PrestaShop et autres CMS.</p>
+                
+                <p><strong>Certifications :</strong> Google Analytics 4 (2024)</p>
+                
+                <p style="margin-top: 1.5rem;"><strong>Mon approche :</strong></p>
+                <p>Vision stratégique alliée à une expertise technique approfondie. Je m'appuie sur un réseau de freelances et d'agences spécialisées pour des prestations sur mesure. Mon accompagnement personnalisé s'adapte aux priorités et objectifs de chaque entreprise.</p>
+                
+                <p style="color: var(--primary-blue); font-weight: 600; margin-top: 1.5rem;">Transformez vos défis digitaux en opportunités de croissance. Contactez-moi pour un échange sur vos projets.</p>
+            </div>
+            
+            <div class="expertise-list">
+                <h3>Expertise clés</h3>
+                <ul>
+                    <li>Stratégie digitale</li>
+                    <li>Web & E-commerce</li>
+                    <li>Marketing digital</li>
+                    <li>SEO / SEA</li>
+                    <li>Applications IA & LLM</li>
+                    <li>Automation marketing</li>
+                    <li>UX/UI Design</li>
+                    <li>WordPress & CMS</li>
+                    <li>Google Analytics 4</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Parcours professionnel</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Conseil en Communication & Développement Commercial</h3>
+                <div class="company">Indépendant</div>
+                <div class="period">Juin 2024 - Présent | Paris (Hybride)</div>
+                <p>J'accompagne les directions de sociétés dans l'identification et la mise en place de solutions marketing et communication au service de leur développement. J'optimise les dispositifs digitaux existants (web, mailing, réseaux sociaux, référencement, automatisation, CRM, IA) en diffusant de bonnes pratiques opérationnelles qui permettent aux équipes d'atteindre leurs objectifs.</p>
+                <p style="margin-top: 1rem;">Je suis particulièrement attentif à l'émergence de nouveaux usages (IA) et de nouvelles réglementations (RGPD, RSE) pour transformer les innovations ou les contraintes en opportunités concrètes.</p>
+            </div>
+            
+            <div class="timeline-item">
+                <h3>Directeur de l'agence Shokola | Conseil en Stratégie Digitale</h3>
+                <div class="company">Shokola</div>
+                <div class="period">Février 2005 - Juin 2024 (19 ans 5 mois) | Paris, Biarritz (Hybride)</div>
+                <p>Pendant ces 19 années à la direction de Shokola, j'ai accompagné plus de 200 entreprises et institutions de divers secteurs et tailles dans la définition et la mise en œuvre de projets digitaux adaptés à leurs attentes spécifiques.</p>
+                <p style="margin-top: 1rem;">J'ai constitué des équipes dédiées, composées de talents recrutés avec soin et de prestataires spécialisés, couvrant une vaste gamme de domaines grâce à un réseau constamment étoffé (développeurs, graphistes, illustrateur, designer 3D, spécialistes SEO/SEA, rédacteurs, photographes, community managers).</p>
+                <p style="margin-top: 1rem;">Au-delà du conseil et du déploiement opérationnel de sites internet, campagnes digitales de notoriété ou génération de trafic, d'optimisation SEO ou de développement e-commerce, j'ai mis en place des services complets de suivi de performance, d'hébergement, de maintenance, de support technique et de webmastering.</p>
+                <p style="margin-top: 1rem;">Cela m'a permis de construire des partenariats durables avec mes clients, certains s'étalant sur plus de 15 ans, où j'ai pu apporter régulièrement des connaissances, suggestions et solutions proactives adaptées à leurs besoins évolutifs.</p>
+            </div>
+            
+            <div class="timeline-item">
+                <h3>Associé Gérant</h3>
+                <div class="company">Webplanete.com</div>
+                <div class="period">Juillet 2011 - Mai 2024 (12 ans 11 mois) | Biarritz</div>
+                <p>Webplanete.com est une agence de création web qui réalise de très beaux projets depuis 2005. Intégrée à Shokola en juillet 2011 pour développer des synergies au Pays-Basque.</p>
+            </div>
+            
+            <div class="timeline-item">
+                <h3>Manager Client Delivery</h3>
+                <div class="company">Reef - Software Company</div>
+                <div class="period">Septembre 1999 - Novembre 2003 (4 ans 3 mois) | Paris</div>
+                <p>Solutions Internet : CMS, Forum, e-commerce, gestion d'utilisateurs.</p>
+                <p style="margin-top: 1rem;">En charge de la gestion des projets clients directs dans le secteur des médias et des institutionnels (Libération, Figaroscope, Eurotunnel, Planet Finance, Viventures, Réunion des Musées Nationaux). Direction d'une équipe de 30 personnes à Paris et Sophia Antipolis (10 nationalités).</p>
+            </div>
+            
+            <div class="timeline-item">
+                <h3>Directeur de Production</h3>
+                <div class="company">Multicom (groupe Movie Com / Altedia)</div>
+                <div class="period">Mars 1999 - Septembre 1999 (7 mois) | Paris</div>
+                <p>Directeur de Production dans la web agency du groupe Movie Com (devenu Altedia). Après une phase d'audit organisationnel, mise en place d'une nouvelle organisation interne pour le compte du DG et animation de l'équipe de production pour la planification des projets.</p>
+            </div>
+            
+            <div class="timeline-item">
+                <h3>Chargé de Projet</h3>
+                <div class="company">Canal+</div>
+                <div class="period">Octobre 1997 - Octobre 1998 (1 an 1 mois) | Paris</div>
+                <p>Responsable de la mise en place d'un portail dédié au haut débit utilisant les contenus diffusés sur les antennes de C+ et de Canal+ dans le cadre d'un test grandeur nature de connexion à Internet par satellite auprès d'une sélection d'abonnés.</p>
+                <p style="margin-top: 1rem;">Coordination d'une équipe de 10 personnes (journalistes, réalisateurs, monteurs, développeurs, graphistes).</p>
+            </div>
+            
+            <div class="timeline-item">
+                <h3>Chef de Projet</h3>
+                <div class="company">IFCM</div>
+                <div class="period">Novembre 1996 - Août 1997 (10 mois) | Paris</div>
+                <p>Société de production de contenus multimédia spécialisée dans les produits culturels et les jeux vidéos.</p>
+                <p style="margin-top: 1rem;">Développement d'une offre de services liés au web. Réalisation d'une étude sur l'émergence des jeux vidéos en ligne pour France Télécom pour promouvoir le développement de connexions haut débit (ADSL) pour le grand public.</p>
+            </div>
+            
+            <div class="timeline-item">
+                <h3>Chef de Projet</h3>
+                <div class="company">Service d'Information du Gouvernement</div>
+                <div class="period">1995 - 1996 (1 an) | Paris</div>
+                <p>Création du premier site web du Premier ministre et du Gouvernement pour le compte de l'agence de conseil TMS, détaché au sein du Service d'Information du Gouvernement pour assister les équipes sur la découverte et la mise en œuvre de ce nouveau média.</p>
+                <p style="margin-top: 1rem;">Sélection et encadrement du prestataire chargé de la réalisation du site, maîtrise d'ouvrage et rédaction de contenu.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="realisations">
+        <h2>Réalisations & Projets</h2>
+        
+        <!-- EDITABLE CONTENT START -->
+        <div class="realizations-grid">
+            <div class="realization-card">
+                <h3>Newsletter et Automatisations CRM</h3>
+                <div class="client">Les Belles Envies</div>
+                <div class="period" style="color: var(--text-gray); font-size: 0.9rem; margin-bottom: 1rem;">Mars 2025 - Juillet 2025</div>
+                <p>Mise en place et configuration de la solution CRM/Mailing Brevo avec migration des contacts depuis Mailchimp, mise en conformité RGPD, et création de scénarios d'automatisation (paniers abandonnés, réactivation clients inactifs, avis Google).</p>
+                <p style="margin-top: 1rem;"><strong>Résultats :</strong> +20% d'inscrits newsletter, génération de ventes additionnelles, amélioration de la relation client.</p>
+                <div class="tags">
+                    <span class="tag">CRM</span>
+                    <span class="tag">Brevo</span>
+                    <span class="tag">Automatisation</span>
+                    <span class="tag">RGPD</span>
+                    <span class="tag">Formation</span>
+                </div>
+            </div>
+            
+            <div class="realization-card">
+                <h3>Campagne Promotionnelle "L'énigme Velazquez"</h3>
+                <div class="client">Bodega Films</div>
+                <div class="period" style="color: var(--text-gray); font-size: 0.9rem; margin-bottom: 1rem;">Janvier 2025 - Mars 2025</div>
+                <p>Conception et gestion de la campagne promotionnelle digitale pour le documentaire réalisé par Stéphane Sorlat. Stratégie multicanal (YouTube preroll, Instagram, Facebook) avec création de visuels et optimisation budgétaire.</p>
+                <p style="margin-top: 1rem;"><strong>Résultats :</strong> Objectifs dépassés sous budget, audience x2 par rapport aux films équivalents le jour de la sortie.</p>
+                <div class="tags">
+                    <span class="tag">Marketing Culturel</span>
+                    <span class="tag">YouTube Ads</span>
+                    <span class="tag">Social Media</span>
+                    <span class="tag">Création visuelle</span>
+                </div>
+            </div>
+            
+            <div class="realization-card">
+                <h3>Refonte d'Identité de Marque</h3>
+                <div class="client">EcoFlex'IT Development</div>
+                <div class="period" style="color: var(--text-gray); font-size: 0.9rem; margin-bottom: 1rem;">Janvier 2025 - Mars 2025</div>
+                <p>Modernisation complète de l'identité graphique : refonte du logo, déclinaison en versions dédiées aux gammes de services, définition de la charte graphique, réécriture des argumentaires commerciaux, création d'iconographies et gabarits pour tous les supports.</p>
+                <div class="tags">
+                    <span class="tag">Branding</span>
+                    <span class="tag">Charte graphique</span>
+                    <span class="tag">Design</span>
+                    <span class="tag">Communication</span>
+                </div>
+            </div>
+            
+            <div class="realization-card">
+                <h3>Campagne de Notoriété Location Fluviale</h3>
+                <div class="client">Fédération des Industries Nautiques</div>
+                <div class="period" style="color: var(--text-gray); font-size: 0.9rem; margin-bottom: 1rem;">Février 2024 - Juin 2024</div>
+                <p>Mise en place d'une campagne SEA pour générer du trafic vers une landing page dédiée au tourisme fluvial. Création d'annonces sur Google Ads et Facebook Ads avec tracking ROI.</p>
+                <p style="margin-top: 1rem;"><strong>Résultats :</strong> Objectifs de trafic atteints avec un mois d'avance sur le planning !</p>
+                <div class="tags">
+                    <span class="tag">SEA</span>
+                    <span class="tag">Google Ads</span>
+                    <span class="tag">Facebook Ads</span>
+                    <span class="tag">Tracking</span>
+                </div>
+            </div>
+            
+            <div class="realization-card">
+                <h3>Refonte Site Les Communs du Perche</h3>
+                <div class="client">Les Communs du Perche - Centre de séminaires</div>
+                <div class="period" style="color: var(--text-gray); font-size: 0.9rem; margin-bottom: 1rem;">Février 2022 - Avril 2022</div>
+                <p>Création d'un site WordPress moderne pour un centre de séminaire premium à 1h30 de Paris. Site responsive, optimisé SEO, administrable par le client. Présentation de l'offre enrichie (piscine, hammam, salle de sport).</p>
+                <p style="margin-top: 1rem;"><strong>Résultats :</strong> Nouvelles réservations immédiates, trafic en croissance régulière.</p>
+                <div class="tags">
+                    <span class="tag">WordPress</span>
+                    <span class="tag">SEO</span>
+                    <span class="tag">Responsive</span>
+                    <span class="tag">Tourisme</span>
+                </div>
+            </div>
+            
+            <div class="realization-card">
+                <h3>Boutique E-commerce Box's</h3>
+                <div class="client">Box's - Expert packaging sur mesure</div>
+                <div class="period" style="color: var(--text-gray); font-size: 0.9rem; margin-bottom: 1rem;">Juin 2021 - Septembre 2021</div>
+                <p>Conception et réalisation d'une boutique en ligne PrestaShop 1.7 avec catalogue riche et personnalisation avancée. Développement de modules spécifiques : prix dégressifs, calcul des frais de transport, recherche avancée par dimensions.</p>
+                <p style="margin-top: 1rem;"><strong>Résultats :</strong> Amélioration du référencement, audience élargie, parcours client simplifié.</p>
+                <div class="tags">
+                    <span class="tag">PrestaShop</span>
+                    <span class="tag">E-commerce</span>
+                    <span class="tag">UX/UI</span>
+                    <span class="tag">Modules custom</span>
+                </div>
+            </div>
+            
+            <div class="realization-card">
+                <h3>Boutique en Ligne Pisteur de Crus</h3>
+                <div class="client">Pisteur de Crus - Caviste en ligne</div>
+                <div class="period" style="color: var(--text-gray); font-size: 0.9rem; margin-bottom: 1rem;">Décembre 2020 - Avril 2021</div>
+                <p>Boutique e-commerce PrestaShop 1.7 pour une sélection de vins d'exception. Gestion temps réel des stocks, présentation détaillée des crus (arômes, cépages), chat en direct, section articles et avis d'experts. Design aux couleurs bordeaux.</p>
+                <p style="margin-top: 1rem;"><strong>Résultats :</strong> Expérience utilisateur premium, référencement optimisé.</p>
+                <div class="tags">
+                    <span class="tag">PrestaShop</span>
+                    <span class="tag">E-commerce</span>
+                    <span class="tag">SEO</span>
+                    <span class="tag">Vins & Gastronomie</span>
+                </div>
+            </div>
+            
+            <div class="realization-card">
+                <h3>Optimisation Site Institutionnel</h3>
+                <div class="client">Cergy Université</div>
+                <div class="period" style="color: var(--text-gray); font-size: 0.9rem; margin-bottom: 1rem;">2024</div>
+                <p>Amélioration de l'ergonomie et du contenu ayant conduit à un enrichissement des pages sur l'orientation. Refonte de l'architecture de l'information et optimisation du parcours utilisateur pour améliorer la visibilité et l'engagement.</p>
+                <div class="tags">
+                    <span class="tag">UX/UI</span>
+                    <span class="tag">SEO</span>
+                    <span class="tag">Enseignement</span>
+                    <span class="tag">Architecture info</span>
+                </div>
+            </div>
+        </div>
+        <!-- EDITABLE CONTENT END -->
+    </section>
+
+    <section id="competences">
+        <h2>Compétences</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>🎯 Stratégie & Conseil</h3>
+                <ul>
+                    <li>Stratégie digitale</li>
+                    <li>Transformation numérique</li>
+                    <li>Audit & diagnostic</li>
+                    <li>Cahiers des charges</li>
+                    <li>Accompagnement direction</li>
+                </ul>
+            </div>
+            
+            <div class="skill-category">
+                <h3>🌐 Web & E-commerce</h3>
+                <ul>
+                    <li>WordPress & WooCommerce</li>
+                    <li>PrestaShop</li>
+                    <li>UX/UI Design</li>
+                    <li>Sites institutionnels</li>
+                    <li>Boutiques en ligne</li>
+                </ul>
+            </div>
+            
+            <div class="skill-category">
+                <h3>📊 Marketing Digital</h3>
+                <ul>
+                    <li>SEO / SEA</li>
+                    <li>Google Ads & Meta Ads</li>
+                    <li>Google Analytics 4</li>
+                    <li>Automation marketing</li>
+                    <li>Acquisition & Conversion</li>
+                </ul>
+            </div>
+            
+            <div class="skill-category">
+                <h3>🤖 Technologies & IA</h3>
+                <ul>
+                    <li>ChatGPT & Prompting IA</li>
+                    <li>Applications LLM</li>
+                    <li>CRM & Automation</li>
+                    <li>RGPD & RSE</li>
+                    <li>Veille technologique</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h2>Témoignages clients</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-text">
+                    "J'ai eu le plaisir de collaborer avec Jean-Yves pendant de nombreuses années. Son professionnalisme et ses compétences techniques ont toujours dépassé nos attentes. Jean-Yves se distinguait par sa capacité d'écoute et sa compréhension approfondie de nos besoins. Il savait transformer nos idées en solutions concrètes et efficaces, tout en apportant des propositions innovantes et pertinentes."
+                </div>
+                <div class="testimonial-author">
+                    <strong>Karine Morin</strong>
+                    <div style="font-size: 0.9rem; color: var(--text-gray);">Responsable Communication - Fédération des Industries Nautiques</div>
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="testimonial-text">
+                    "C'est Jean-Yves qui m'a présenté à Internet en 1994. En plus d'être un excellent directeur de projet, Jean-Yves a un vrai talent pour l'explication de l'internet et du digital sous toutes ses formes. Cela reste toujours un grand plaisir d'échanger avec lui sur les sujets digitaux d'aujourd'hui."
+                </div>
+                <div class="testimonial-author">
+                    <strong>Nicolas Rauber</strong>
+                    <div style="font-size: 0.9rem; color: var(--text-gray);">Innovation Numérique | Immobilier</div>
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="testimonial-text">
+                    "Son écoute attentive des besoins spécifiques à mon métier de marchand d'Art ont permis de déterminer rapidement le contenu et le meilleur choix technique pour mes besoins. Il est disponible et en recherche d'innovation permanente."
+                </div>
+                <div class="testimonial-author">
+                    <strong>Marie Caillierez</strong>
+                    <div style="font-size: 0.9rem; color: var(--text-gray);">Manager - Une Maison, Un Jardin</div>
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="testimonial-text">
+                    "Jean-Yves is a Internet pioneer in France. We had a lot of pleasure working together for the French Government on the first Intranet & Internet projects. Jean-Yves gained from this time a deep knowledge in this field and remains a great professional."
+                </div>
+                <div class="testimonial-author">
+                    <strong>Stéphane Arnold Rauber</strong>
+                    <div style="font-size: 0.9rem; color: var(--text-gray);">Managing Partner</div>
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="testimonial-text">
+                    "Jean-Yves is a strong manager. He knows how to turn problems into solutions by listening to people who work with him and by taking decisions that match the clients' goals and the company's interests."
+                </div>
+                <div class="testimonial-author">
+                    <strong>Fabrice Cantegrel</strong>
+                    <div style="font-size: 0.9rem; color: var(--text-gray);">CTO - Scikoop Inc.</div>
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="testimonial-text">
+                    "Jean-Yves is really client-oriented. He worked with some of the most difficult customers of the company, and has never lost his sense of client delivery and satisfaction. Jean-Yves is also a very nice person to work with."
+                </div>
+                <div class="testimonial-author">
+                    <strong>Thomas Duzan</strong>
+                    <div style="font-size: 0.9rem; color: var(--text-gray);">Business Development - TotalEnergies</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" style="background: var(--bg-light);">
+        <h2>Certifications</h2>
+        <div class="realizations-grid">
+            <div class="realization-card">
+                <h3>Design Prompts for Everyday Work Tasks</h3>
+                <div class="client">Google via Coursera</div>
+                <p style="margin-bottom: 0.5rem;">Délivrée en novembre 2025</p>
+                <p style="font-size: 0.9rem; color: var(--text-gray); margin-bottom: 1rem;">Identifiant : BUR6590ZLK8Q</p>
+                <div class="tags">
+                    <span class="tag">ChatGPT</span>
+                    <span class="tag">Prompting IA</span>
+                    <span class="tag">LLM Application</span>
+                </div>
+            </div>
+            
+            <div class="realization-card">
+                <h3>Certification Google Analytics</h3>
+                <div class="client">Skillshop by Google</div>
+                <p style="margin-bottom: 0.5rem;">Émise en février 2024 - Expire en février 2025</p>
+                <p style="font-size: 0.9rem; color: var(--text-gray); margin-bottom: 1rem;">Identifiant : 96111890</p>
+                <div class="tags">
+                    <span class="tag">Google Analytics</span>
+                    <span class="tag">Marketing Digital</span>
+                    <span class="tag">Web Analytics</span>
+                </div>
+            </div>
+            
+            <div class="realization-card">
+                <h3>Utilisez Google Analytics pour votre entreprise</h3>
+                <div class="client">Skillshop by Google</div>
+                <p style="margin-bottom: 0.5rem;">Émise en février 2024 - Expire en février 2025</p>
+                <p style="font-size: 0.9rem; color: var(--text-gray); margin-bottom: 1rem;">Identifiant : 96223269</p>
+                <div class="tags">
+                    <span class="tag">Google Analytics</span>
+                    <span class="tag">Marketing Digital</span>
+                    <span class="tag">Analyse de données</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contactez-moi</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <p>Transformons ensemble vos défis digitaux en opportunités de croissance.</p>
+                <p>📞 <a href="tel:+33140475148" style="color: white;">01 40 47 51 48</a></p>
+                <p>📧 <a href="mailto:jylafon@gmail.com" style="color: white;">jylafon@gmail.com</a></p>
+                
+                <div class="contact-links">
+                    <a href="https://www.linkedin.com/in/jylafon" target="_blank" rel="noopener">🔗 LinkedIn</a>
+                </div>
+            </div>
+            
+            <form id="contactForm" action="https://formspree.io/f/xzzyzqvj" method="POST">
+                <div id="formMessage" class="form-message"></div>
+                
+                <input type="text" name="_gotcha" class="honeypot" tabindex="-1" autocomplete="off">
+                
+                <div class="form-group">
+                    <label for="name">Nom *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="_replyto" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Sujet *</label>
+                    <input type="text" id="subject" name="_subject" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                
+                <div class="captcha-group">
+                    <div class="form-group">
+                        <label for="captcha" class="captcha-question">Question de sécurité : Combien font <span id="captchaQuestion"></span> ?</label>
+                        <input type="text" id="captcha" name="captcha" required>
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Envoyer le message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Jean-Yves Lafon - Expert Marketing Digital & Stratégie Web</p>
+        <p>Manager Marketing BtoB | Conseil en temps partagé | Paris, Île-de-France</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offset = 80;
+                    const targetPosition = target.offsetTop - offset;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        let captchaAnswer;
+        
+        function generateCaptcha() {
+            const num1 = Math.floor(Math.random() * 10) + 1;
+            const num2 = Math.floor(Math.random() * 10) + 1;
+            captchaAnswer = num1 + num2;
+            document.getElementById('captchaQuestion').textContent = num1 + ' + ' + num2;
+        }
+        
+        generateCaptcha();
+
+        document.getElementById('contactForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const formMessage = document.getElementById('formMessage');
+            const submitButton = this.querySelector('button[type="submit"]');
+            
+            // Check honeypot (anti-spam)
+            if (this._gotcha && this._gotcha.value !== '') {
+                console.log('Spam detected');
+                return false;
+            }
+            
+            // Check captcha
+            const userCaptcha = parseInt(document.getElementById('captcha').value);
+            if (userCaptcha !== captchaAnswer) {
+                formMessage.className = 'form-message error';
+                formMessage.textContent = '❌ Réponse de sécurité incorrecte. Veuillez réessayer.';
+                formMessage.style.display = 'block';
+                generateCaptcha();
+                document.getElementById('captcha').value = '';
+                return false;
+            }
+            
+            // Disable submit button
+            submitButton.disabled = true;
+            submitButton.textContent = 'Envoi en cours...';
+            
+            try {
+                // Submit form to FormSpree
+                const formData = new FormData(this);
+                const response = await fetch(this.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+                
+                if (response.ok) {
+                    formMessage.className = 'form-message success';
+                    formMessage.textContent = '✅ Message envoyé avec succès ! Je vous répondrai dans les plus brefs délais.';
+                    formMessage.style.display = 'block';
+                    this.reset();
+                    generateCaptcha();
+                } else {
+                    throw new Error('Erreur lors de l\'envoi');
+                }
+                
+            } catch (error) {
+                formMessage.className = 'form-message error';
+                formMessage.textContent = '❌ Une erreur est survenue. Veuillez réessayer ou me contacter directement par email.';
+                formMessage.style.display = 'block';
+            } finally {
+                submitButton.disabled = false;
+                submitButton.textContent = 'Envoyer le message';
+            }
+        });
+
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('nav a');
+            
+            let current = '';
+            sections.forEach(function(section) {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= (sectionTop - 100)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(function(link) {
+                link.style.color = '';
+                if (link.getAttribute('href') === '#' + current) {
+                    link.style.color = 'var(--primary-blue)';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
